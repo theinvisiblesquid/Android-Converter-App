@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Temperature Converter App</string>
+
+    <string-array name="units_from">
+        <item>Select a Unit</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Metres</item>
+        <item>Feet</item>
+    </string-array>
+
+
+    <string-array name="units_to">
+        <item>Select a Unit</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Metres</item>
+        <item>Feet</item>
+    </string-array>
+
+    <string name="toastNoTemp">Please Enter a Temperature</string>
+    <string name="convert_in_other_activity">Convert in Other Activity</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="convert_from">Convert from...</string>
+    <string name="convert_to">Convert to...</string>
+    <string name="convert_here">Convert Here</string>
+    <string name="back">Back</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spUnitTo"
+        android:layout_width="195dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/tvConvert2"
+        app:layout_constraintTop_toBottomOf="@+id/spUnitFrom" />
+
+    <Spinner
+        android:id="@+id/spUnitFrom"
+        android:layout_width="195dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toEndOf="@+id/tvConvertFrom"
+        app:layout_constraintTop_toBottomOf="@+id/etTemp" />
+
+
+    <TextView
+        android:id="@+id/tvConvert2"
+        android:layout_width="99dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/convert_to"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConvertFrom" />
+
+    <EditText
+        android:id="@+id/etTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tvConvertFrom"
+        android:layout_width="99dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="@string/convert_from"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemp" />
+
+    <Button
+        android:id="@+id/btnConvertHere"
+        android:layout_width="118dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/convert_here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConvert2" />
+
+    <Button
+        android:id="@+id/btnConvertSecondAct"
+        android:layout_width="118dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/convert_in_other_activity"
+        app:layout_constraintStart_toEndOf="@+id/btnConvertHere"
+        app:layout_constraintTop_toBottomOf="@+id/spUnitTo" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="175dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertHere" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
